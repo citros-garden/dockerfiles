@@ -9,7 +9,7 @@ from generate import templates
 from generate import generate_dockerfiles as gen
 
 TODAY = date.today()
-USER = "althack"
+USER = "vovalulav"
 
 log = logging.getLogger(__name__)
 
@@ -22,10 +22,12 @@ def auth_config():
         password: $DOCKER_PASSWORD
     """
     if os.getenv('DOCKER_USERNAME') and os.getenv('DOCKER_PASSWORD'):
-        return {
+        auth = {
             "username": os.getenv('DOCKER_USERNAME'),
             "password": os.getenv('DOCKER_PASSWORD')
         }
+        print(auth)
+        return auth
     return None
 
 
@@ -235,5 +237,6 @@ def main(generate, push, clean, image):
 
 
 if __name__ == "__main__":
+    # auth_config()
     # pylint: disable=no-value-for-parameter
     main()

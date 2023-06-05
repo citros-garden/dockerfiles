@@ -58,6 +58,17 @@ ros2:
     base_image: "ubuntu"
     image_version: "22.04"
   - 
+    name: iron
+    ros_distro: iron
+    targets:
+      - base
+      - dev
+      - full
+      - gazebo
+    python_version: "3.10"
+    base_image: "ubuntu"
+    image_version: "22.04"
+  - 
     name: humble-cuda
     ros_distro: humble
     targets:
