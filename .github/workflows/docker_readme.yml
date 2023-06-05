@@ -20,8 +20,6 @@ jobs:
           - ros
           - ros2
           - gazebo
-          - ignition
-          - gz
     steps:
       - name: git checkout
         uses: actions/checkout@v3

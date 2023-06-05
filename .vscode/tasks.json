@@ -90,13 +90,11 @@
         "noetic",
         "melodic",
         "humble",
+        "iron",
         "humble-cuda",
         "foxy",
         "foxy-cuda",
         "gazebo11",
-        "fortress",
-        "citadel",
-        "garden",
         "all"
       ],
       "default": "foxy"
