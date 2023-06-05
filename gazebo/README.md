@@ -1,4 +1,4 @@
-# althack/gazebo
+# vovalulav/gazebo
 
 These are the docker images I use for developing with [VSCode](https://code.visualstudio.com/).
 See [the docs](https://athackst.github.io/dockerfiles) or read about  [how I develop with vscode and docker](https://www.allisonthackston.com/articles/docker_development.html).
@@ -6,7 +6,7 @@ See [the docs](https://athackst.github.io/dockerfiles) or read about  [how I dev
 ## Usage
 
 ```bash
-docker pull althack/gazebo:gazebo11-base
+docker pull vovalulav/gazebo:gazebo11-base
 ```
 
 ## Organization
