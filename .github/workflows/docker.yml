@@ -73,4 +73,6 @@ jobs:
           DOCKER_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
           DOCKER_PASSWORD: ${{ secrets.DOCKERHUB_PASSWORD }}
         run: |
+          echo $DOCKER_USERNAME
+          echo $DOCKER_PASSWORD
           ./build.py --push ${{ matrix.docker_image }}
